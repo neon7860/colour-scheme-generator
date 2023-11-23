@@ -30,10 +30,11 @@ function displayColours(data){
 }
 
  columnContainer.addEventListener('click', function(e){
-        console.log(e.target.dataset.color)
+        //console.log(e.target.dataset.color)
         if (e.target.id.includes("color")){
             console.log(e.target.id)
             navigator.clipboard.writeText(e.target.dataset.color)
+            alert(`Hex code "${e.target.dataset.color}" copied`)
         } 
 })
 
